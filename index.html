@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Iniciar sesión</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+                <small id="username-error" class="error-message"></small>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <small id="password-error" class="error-message"></small>
+            </div>
+            <div class="button-group">
+                <button type="submit">Iniciar sesión</button>
+                <button type="button" id="cancel-btn">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="home-container">
+        <p id="welcome-message"></p>
+        <div class="button-group">
+            <button type="button" id="logout-btn">Cerrar sesión</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
