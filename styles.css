@@ -66,3 +66,32 @@ button:hover {
     margin-top: 5px;
     display: block;
 }
+
+@media (max-width: 900px) {
+
+    .login-container,
+    .home-container {
+        max-width: 80%;
+    }
+
+    .input-group {
+        margin-bottom: 12px;
+    }
+
+    input {
+        padding: 9px;
+    }
+
+    .button-group button {
+        width: 48%;
+        margin: 5px 1%;
+    }
+}
+
+@media (min-width: 901px) {
+
+    .login-container,
+    .home-container {
+        max-width: 400px;
+    }
+}
