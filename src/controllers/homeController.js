@@ -18,6 +18,6 @@ export const getAccountDetails = async (req, res) => {
         const user = new User(email, username);
         res.render('account', { user });
     } catch (error) {
-        res.status(500).send('Error al obtener los datos del usuario');
+        res.status(500).render('home', {error: 'Error al obtener los datos del usuario'});
     }
 }

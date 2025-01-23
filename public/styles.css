@@ -9,8 +9,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.login-container,
-.home-container {
+.main-container{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -18,10 +17,6 @@ body {
     text-align: center;
     width: 100%;
     max-width: 400px;
-}
-
-.home-container {
-    display: none;
 }
 
 .input-group {
@@ -48,11 +43,14 @@ input {
     cursor: pointer;
     margin: 5px;
     color: white;
-    background-color: #2E3A3C;
     transition: background-color 0.5s ease;
 }
 
-button[type="submit"] {
+.btn-main {
+    background-color: #2E3A3C;
+}
+
+.btn-secondary {
     background-color: #3F8491;
 }
 
@@ -64,7 +62,15 @@ button:hover {
     color: rgb(168, 170, 20);
     font-size: 0.9rem;
     margin-top: 5px;
-    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: rgb(7, 92, 25);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 900px) {

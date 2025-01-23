@@ -2,8 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
 import session from 'express-session';
-import authRoutes from './routes/authRoutes.js';
-import homeRoutes from './routes/homeRoutes.js';
+import authRoutes from './src/routes/authRoutes.js';
+import homeRoutes from './src/routes/homeRoutes.js';
 
 dotenv.config();
 const app = express();
@@ -24,7 +24,7 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
 }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 app.use('/', homeRoutes);
 app.use('/auth', authRoutes);

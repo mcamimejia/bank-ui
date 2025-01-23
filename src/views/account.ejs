@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Detalles de la cuenta</h1>
+        <p>Bienvenido, <strong><%= user.username %></strong></p>
+        <p>Correo electrónico: <strong><%= user.email %></strong></p>
+        <div class="button-group">
+            <form action="/" method="GET">
+                <button type="submit" class="btn-main">Volver al Inicio</button>
+            </form>
+
+            <form action="/auth/logout" method="POST">
+                <button type="submit" class="btn-secondary">Cerrar sesión</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Banco MCM. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
