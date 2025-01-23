@@ -13,7 +13,7 @@
         <h1>Bienvenido al Banco MCM</h1>
         <p>Ingresa a una opción para empezar:</p>
         <div class="button-group">
-            <form action="/account" method="GET">
+            <form id="account-action-form" action="/account" method="GET">
                 <button type="submit" class="btn-main">Ver detalles de la cuenta</button>
             </form>
 
@@ -28,10 +28,12 @@
                 </p>
             </div>
         <% } %>
+        <div id="loader" class="loader hidden"></div>
     </div>
     <footer>
         <p>&copy; 2025 Banco MCM. Todos los derechos reservados.</p>
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>

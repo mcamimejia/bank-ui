@@ -11,7 +11,7 @@
 <body>
     <div class="main-container">
         <h1>Registro</h1>
-        <form id="login-form" action="/auth/signup" method="POST">
+        <form id="signup-form" action="/auth/signup" method="POST">
             <div class="input-group">
                 <label for="username">Usuario</label>
                 <input type="text" id="username" name="username" required>
@@ -36,10 +36,12 @@
                 </div>
             <% } %>
         </form>
+        <div id="loader" class="loader hidden"></div>
     </div>
     <footer>
         <p>&copy; 2025 Banco MCM. Todos los derechos reservados.</p>
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>

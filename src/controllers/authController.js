@@ -6,8 +6,17 @@ import { BANK_ACCOUNTS_API } from "../../app.js";
 export const signup = async (req, res) => {
     const { email, username, password } = req.body;
 
-    if (!email || !password || !username) {
-        return res.status(400).render('signup', {error:'Faltan campos requeridos: email, password, username'});
+    if (!username || username.length < 6) {
+        return res.status(400).render('signup', { error: 'El nombre de usuario debe tener al menos 6 caracteres.' });
+    }
+
+    if (!password || password.length < 6) {
+        return res.status(400).render('signup', { error: 'La contraseña debe tener al menos 6 caracteres.' });
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+        return res.status(400).render('signup', {error: 'El formato del correo electrónico no es válido'});
     }
 
     const user = new User(email, username, password);
