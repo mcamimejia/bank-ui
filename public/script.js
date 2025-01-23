@@ -1,4 +1,4 @@
-const loginForm = document.getElementById('login-form');
+/*const loginForm = document.getElementById('login-form');
 const usernameError = document.getElementById('username-error');
 const passwordError = document.getElementById('password-error');
 const cancelBtn = document.getElementById('cancel-btn');
@@ -62,4 +62,4 @@ logoutBtn.addEventListener('click', () => {
 
     loginContainer.style.display = 'block';
     homeContainer.style.display = 'none';
-});
+});*/
