@@ -88,4 +88,15 @@ El servidor estará disponible en http://localhost:3000.
 **Descripción**: Cierra la sesión del usuario actual.
 **Respuesta**: Redirige a la página de login.
 
-![screenshot](login-template1.PNG)
+
+## Screenshots
+
+![screenshot1](login-form.PNG)
+
+![screenshot2](login-error.PNG)
+
+![screenshot3](signup-loader.PNG)
+
+![screenshot4](home.PNG)
+
+![screenshot1](account.PNG)

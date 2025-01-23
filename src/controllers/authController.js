@@ -40,7 +40,7 @@ export const signup = async (req, res) => {
     } catch (error) {
         req.io.emit('progress', 'Error al registrar usuario.');
         await delay(2000);// Simular retraso en respuestas para el loader
-        res.status(401).render('signup', {error: error.response.data || 'Error al registrar usuario'});
+        res.status(401).render('signup', {error: 'Error al registrar usuario'});
     }
 };
 
@@ -80,7 +80,7 @@ export const login = async (req, res) => {
     } catch (error) {
         req.io.emit('progress', 'Error de autenticación.');
         await delay(2000);// Simular retraso en respuestas para el loader
-        res.status(401).render('login', {error: error.response.data || 'Error de autenticación'});
+        res.status(401).render('login', {error: 'Error de autenticación'});
     }
 };
 
